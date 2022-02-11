@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+
+    --font-size: 15px;
+    --font-family-resumen: 'Lexend Deca', sans-serif;
+    --font-family-title: 'Big Shoulders Display', cursive;
+    
+}
+
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: var(--very-light-gray);
+    font-size: var(--font-size);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 2em;
+    font-weight: 400;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    position: relative;
+}
+
+.container {
+    /* border: 1px solid magenta; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+    padding: 2.8em;
+
+}
+
+.c1 {
+    background-color: var(--bright-orange);
+    border-radius: 1em 0 0 1em;
+}
+
+.c2 {
+    background-color: var(--dark-cyan);
+}
+
+.c3 {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0em 1em 1em 0em;
+}
+
+.title {
+    font-family: var(--font-family-title);
+    color: var(--very-light-gray);
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.resumen {
+    font-family: var(--font-family-resumen);
+    color: var(--very-light-gray);
+    font-weight: lighter;
+}
+
+.learnMore {
+    width: 70%;
+
+}
+
+button {
+    margin: 2em 0 0 0;
+}
+
+.more {
+    /* padding: 1.1em 2em; */
+    width: 100%;
+    border-style: none;
+    background-color: var(--very-light-gray);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 400;
+    font-family: var(--font-family-resumen);
+    font-size: 15px;
+
+    height: 45px;
+}
+
+
+
+.m1 {
+    color: var(--bright-orange);
+    transition: 0.5s;
+    
+}
+.m2 {
+    color: var(--dark-cyan);
+    transition: 0.5s;
+}
+.m3 {
+    color: var(--very-dark-cyan);
+    transition: 0.5s;
+}
+
+.m1:hover {
+    border: 2px solid var(--very-light-gray);
+    background-color: var(--bright-orange);
+    color: var(--very-light-gray);
+    
+}
+.m2:hover {
+    border: 2px solid var(--very-light-gray);
+    color: var(--very-light-gray);
+
+    background-color: var(--dark-cyan);
+
+}
+.m3:hover {
+    border: 2px solid var(--very-light-gray);
+    color: var(--very-light-gray);
+    background-color: var(--very-dark-cyan);
+}
+
+@media (max-width: 920px) {
+    body {
+        height: auto;
+        background-color: var(--very-light-gray);
+        font-size: var(--font-size);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        font-weight: 400;
+    }
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        width: 600px;
+        padding: 1em;
+    }
+
+    .learnMore {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    body {
+        height: auto;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 3em 1em 1em 1em;
+        width: 300px;
+    }
+
+    .learnMore {
+        width: 100%;
+    }
+
+    footer {
+        width: 300px;
+    }
+
+    .resume {
+        font-weight: 100;
+    }
+
+    .c1 {
+        background-color: var(--bright-orange);
+        border-radius: 1em 1em 0 0em;
+    }
+    
+    .c2 {
+        background-color: var(--dark-cyan);
+    }
+    
+    .c3 {
+        background-color: var(--very-dark-cyan);
+        border-radius: 0em 0em 1em 1em;
+    }
+}
